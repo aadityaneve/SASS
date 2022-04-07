@@ -19,13 +19,19 @@
     }
 }
 
+@mixin mobile {
+    @media (max-width: $mobile) {
+        @content;
+    }
+}
+
 body {
     background-color: $primary-color;
     color: $text-color;
 }
 
 .main {
-    @include flexCenter(column);
+    @include flexCenter(row);
 
     width: 80%;
     margin: 0 auto;
@@ -37,6 +43,11 @@ body {
             color: coral;
         }
     }
+
+    @include mobile {
+        flex-direction: column;
+    }
+
 }
 
 .light {
