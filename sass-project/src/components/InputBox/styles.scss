@@ -1,0 +1,41 @@
+@use '../../scss/abstracts'as *;
+
+.form {
+    @include flexCenter(column);
+
+    #{&}__title {
+        color: $accent-color;
+
+        &:hover {
+            color: $primary-color;
+        }
+    }
+
+    #{&}__inputBlock {
+        @include flexCenter(row);
+        gap: 15px;
+    }
+
+    #{&}__inputBlock__input {
+        font-weight: fontWeight(bold);
+        font-size: fontSize(large);
+
+        color: $primary-color;
+        box-shadow: 4px 4px 5px green;
+    }
+
+    #{&}__inputBlock__button {
+        font-weight: fontWeight(bold);
+        font-size: fontSize(large);
+
+        color: $accent-color;
+        border: 0px;
+        padding: 3px;
+        box-shadow: 3px 3px 5px black;
+        cursor: pointer;
+
+        &:hover {
+            color: $primary-color;
+        }
+    }
+}
