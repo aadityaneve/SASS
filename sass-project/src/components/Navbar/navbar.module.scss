@@ -1,0 +1,43 @@
+@use '../../scss/abstracts'as *;
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    width: calc(100% - 10%);
+
+    #{&}__logo {
+        color: $text-light;
+        cursor: pointer;
+    }
+
+    #{&}__listItems {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        font-weight: bold;
+        color: white;
+
+        list-style-type: none;
+
+        &__listItem {
+            margin: 0.8em;
+            cursor: pointer;
+        }
+    }
+
+
+    #{&}__themeButton {
+        cursor: pointer;
+    }
+}
+
+.light {
+    background-color: $primary-light;
+}
+
+.dark {
+    background-color: $secondary-light;
+}

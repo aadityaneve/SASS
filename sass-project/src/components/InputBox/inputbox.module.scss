@@ -4,7 +4,7 @@
     @include flexCenter(column);
 
     #{&}__title {
-        color: $accent-color;
+        // color: $accent-color;
 
         &:hover {
             color: $primary-color;
@@ -17,6 +17,8 @@
     }
 
     #{&}__inputBlock__input {
+        width: 70%;
+
         font-weight: fontWeight(bold);
         font-size: fontSize(large);
 
@@ -28,7 +30,7 @@
         font-weight: fontWeight(bold);
         font-size: fontSize(large);
 
-        color: $accent-color;
+        // color: $accent-color;
         border: 0px;
         padding: 3px;
         box-shadow: 3px 3px 5px black;
@@ -38,4 +40,12 @@
             color: $primary-color;
         }
     }
+}
+
+.light {
+    color: $info-light;
+}
+
+.dark {
+    color: $secondary-light;
 }
