@@ -1,13 +1,13 @@
-import logo from './logo.svg';
-import './App.css';
-import InputBox from './components/InputBox/InputBox';
+import logo from './logo.svg'
+import './App.css'
+import InputBox from './components/InputBox/InputBox'
 
-function App() {
+function App () {
   return (
-    <div className="App">
+    <div className='App'>
       <InputBox />
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
