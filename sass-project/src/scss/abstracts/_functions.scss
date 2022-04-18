@@ -5,6 +5,7 @@
     flex-direction: $direction;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 @function fontWeight($weight-name) {
