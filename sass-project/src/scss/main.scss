@@ -1,0 +1,29 @@
+@use './abstracts'as *;
+
+.light {
+  .text {
+    color: $text-dark;
+  }
+
+  .background {
+    background-color: $background-light;
+  }
+}
+
+.dark {
+  .text {
+    color: $text-light;
+  }
+
+  .background {
+    background-color: $background-dark;
+  }
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 100vh;
+  align-items: center;
+}
